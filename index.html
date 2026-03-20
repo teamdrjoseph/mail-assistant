@@ -51,29 +51,29 @@
         }
         .button-link {
             display: inline-block;
-            background: #2C2C2C;
-            color: white;
-            text-decoration: none;
             font-family: 'Barlow Condensed', sans-serif;
-            font-weight: 700;
-            font-size: 28px;
-            letter-spacing: 0.25em;
+            background: var(--charcoal);
+            color: var(--cream);
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            font-size: 11px;
+            letter-spacing: 0.22em;
             text-transform: uppercase;
-            padding: 22px 65px;
-            transition: all 0.3s ease;
-            border: 1px solid #2C2C2C;
+            font-weight: 700;
+            padding: 14px 48px;
+            transition: background 0.2s, transform 0.1s;
+            border-radius: 1px;
         }
-        .button-link:hover {
-            background: transparent;
-            color: #2C2C2C;
-        }
+        .button-link:hover { background: #1a1a1a; }
+        .button-link:active { transform: scale(0.99); }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="title-main">E-Mail Assistant</div>
         <div class="title-sub">Smart Communication Tool</div>
-        <a href="https://claude.ai/artifacts/f71a7dd3-0fc0-4683-962d-d1954f12a0f2">
+        <a class="button-link" href="https://claude.ai/artifacts/f71a7dd3-0fc0-4683-962d-d1954f12a0f2">
             Starten
         </a>
     </div>
