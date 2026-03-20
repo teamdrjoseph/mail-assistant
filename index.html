@@ -4,117 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEAM DR JOSEPH · Portal</title>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Barlow:wght@300;400&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@300;400&display=swap" rel="stylesheet">
     <style>
-        :root { 
-            --cream: #F5F0E8; 
-            --warm-white: #FAF8F4; 
-            --gold: #B8976A; 
-            --charcoal: #2C2C2C; 
-            --border: #E0D8CE; 
+        :root {
+            --cream: #F5F0E8;
+            --warm-white: #FAF8F4;
+            --gold: #B8976A;
+            --charcoal: #2C2C2C;
+            --border: #E0D8CE;
         }
-        
-        body { 
-            margin: 0; 
-            padding: 0; 
-            font-family: 'Barlow', sans-serif; 
-            background-color: var(--cream); 
-            color: var(--charcoal); 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            min-height: 100vh; 
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Barlow', sans-serif;
+            background-color: var(--cream);
+            color: var(--charcoal);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
-
-        .container { 
-            background: var(--warm-white); 
-            padding: 80px 50px; 
-            border: 1px solid var(--border); 
-            max-width: 600px; 
-            width: 90%; 
-            box-shadow: 0 15px 40px rgba(0,0,0,0.04); 
+        .container {
+            background: var(--warm-white);
+            padding: 80px 50px;
+            border: 1px solid var(--border);
+            max-width: 600px;
+            width: 90%;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.04);
             text-align: center;
         }
-
-        .logo-section {
-            margin-bottom: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .title-main {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 28px;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: #2C2C2C;
+            margin-bottom: 10px;
         }
-
-        /* Das Logo als reine Vektorform, eingefärbt in Dunkelgrau */
-        .logo-vector {
-            width: 100%;
-            max-width: 420px;
-            height: auto;
-            fill: var(--charcoal);
-            display: block;
-        }
-
-        .line-separator {
-            width: 100%;
-            height: 1px;
-            background-color: var(--charcoal);
-            margin-top: 15px;
+        .title-sub {
+            font-family: 'Barlow', sans-serif;
+            font-weight: 300;
+            font-size: 13px;
+            letter-spacing: 0.3em;
+            color: #B8976A;
             margin-bottom: 50px;
         }
-
-        .title-main { 
-            font-family: 'Cormorant Garamond', serif; 
-            font-size: 26px; 
-            letter-spacing: 0.35em; 
-            text-transform: uppercase; 
-            margin-bottom: 12px; 
-            font-weight: 400; 
+        .button-link {
+            display: inline-block;
+            background: #2C2C2C;
+            color: white;
+            text-decoration: none;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 28px;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            padding: 22px 65px;
+            transition: all 0.3s ease;
+            border: 1px solid #2C2C2C;
         }
-
-        .title-sub { 
-            font-family: 'Barlow Condensed', sans-serif; 
-            font-size: 14px; 
-            letter-spacing: 0.45em; 
-            color: var(--gold); 
-            text-transform: uppercase; 
-            margin-bottom: 55px; 
-        }
-
-        .button-link { 
-            display: inline-block; 
-            background: var(--charcoal); 
-            color: white !important; 
-            text-decoration: none; 
-            font-family: 'Barlow Condensed', sans-serif; 
-            font-size: 14px; 
-            letter-spacing: 0.3em; 
-            text-transform: uppercase; 
-            padding: 22px 65px; 
-            transition: all 0.3s ease; 
-            border: 1px solid var(--charcoal); 
-        }
-
-        .button-link:hover { 
-            background: transparent; 
-            color: var(--charcoal) !important; 
+        .button-link:hover {
+            background: transparent;
+            color: #2C2C2C;
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <div class="logo-section">
-            <svg class="logo-vector" viewBox="0 0 457 32" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.4 2.1h-7.3v27.7H4.3V2.1H0V0h16.4v2.1zM34.4 12.3h-8.2v6.1h7.4v2.1h-7.4v7.3h8.6v2.1H21.9V0h12.5v2.1h-8.2v8.1h8.2v2.1zM53.1 23.3h-8.5l-1.6 6.5h-4.6L46.6 0h4.5l8.1 29.8h-4.6l-1.5-6.5zm-1-4.1l-3.3-13.6-3.3 13.6h6.6zM88.1 0v29.8h-4.1l-10.4-18.1v18.1h-4.1V0h4.1l10.4 18.2V0h4.1zM113.8 0v29.8h-4.3V2.1h-4.8V0h13.9v2.1h-4.8zM142.1 6.8h2.3c3.4 0 5.2 1.6 5.2 4.4 0 2.8-1.8 4.4-5.2 4.4h-2.3V6.8zm-4.3-2.1v25.1h4.3v-12h2.5l5.5 12h4.7l-6-13c2.7-.9 4.3-3.1 4.3-6.1 0-4.6-3.2-6.9-8.4-6.9h-6.9v1zM170.1 0v29.8h-4.1l-10.4-18.1v18.1h-4.1V0h4.1l10.4 18.2V0h4.1zM203.2 0c7.8 0 12.8 5.7 12.8 14.9 0 9.2-5 14.9-12.8 14.9s-12.8-5.7-12.8-14.9C190.4 5.7 195.4 0 203.2 0zm0 27.7c6.1 0 8.5-4.8 8.5-12.8s-2.4-12.8-8.5-12.8-8.5 4.8-8.5 12.8 2.4 12.8 8.5 12.8zM238.1 11.8c0-3-.1-5-.1-7.1 0-1.8.1-3.1.1-4.7h-4.3c0 1.6.1 2.9.1 4.7 0 2.1-.1 4.1-.1 7.1 0 3 .1 5 .1 7.1 0 1.8-.1 3.1-.1 4.7h4.3c0-1.6-.1-2.9-.1-4.7 0-2.1.1-4.1.1-7.1zM262.1 14.9c0 9.2-5 14.9-12.8 14.9s-12.8-5.7-12.8-14.9c0-9.2 5-14.9 12.8-14.9s12.8 5.7 12.8 14.9zm-4.3 0c0-8-2.4-12.8-8.5-12.8s-8.5 4.8-8.5 12.8 2.4 12.8 8.5 12.8 8.5-4.8 8.5-12.8zM286.1 2.1h-7.3v27.7h-4.3V2.1h-4.4V0h16v2.1zM304.1 12.3h-8.2v6.1h7.4v2.1h-7.4v7.3h8.6v2.1h-12.9V0h12.5v2.1h-8.2v8.1h8.2v2.1zM324.4 20.1c1.4.9 3.2 1.4 5.2 1.4 3 0 4.5-1.1 4.5-2.8 0-1.6-1.1-2.4-4-3.1-4.2-1-6.8-2.4-6.8-6 0-3.8 3.1-6 8.1-6 2.3 0 4.2.4 5.7 1.1l-.8 3.5c-1.3-.7-2.9-1.1-4.7-1.1-3 0-4.1 1.2-4.1 2.5 0 1.5.9 2.2 4 2.9 4.3 1 6.8 2.5 6.8 6.1 0 4-3.3 6.4-8.7 6.4-2.5 0-4.9-.6-6.6-1.5l1.4-3.4zM361.1 12.3h-8.2v6.1h7.4v2.1h-7.4v7.3h8.6v2.1h-12.9V0h12.5v2.1h-8.2v8.1h8.2v2.1zM380.1 2.1h-7.3v27.7h-4.3V2.1h-4.4V0h16v2.1zM392.1 0v29.8h-4.3V2.1h-4.8V0h13.9v2.1h-4.8zM425.4 6.8h2.3c3.4 0 5.2 1.6 5.2 4.4 0 2.8-1.8 4.4-5.2 4.4h-2.3V6.8zm-4.3-2.1v25.1h4.3v-12h2.5l5.5 12h4.7l-6-13c2.7-.9 4.3-3.1 4.3-6.1 0-4.6-3.2-6.9-8.4-6.9h-6.9v1zM453.4 2.1h-7.3v27.7h-4.3V2.1h-4.4V0h16v2.1z" />
-            </svg>
-            <div class="line-separator"></div>
-        </div>
-        
-        <div class="title-main">E-Mail Assistent</div>
+        <div class="title-main">E-Mail Assistant</div>
         <div class="title-sub">Smart Communication Tool</div>
-        
         <a href="https://claude.ai/artifacts/a1340544-3bb5-4d8d-89c1-6ae4b0a1d0d4" class="button-link">
-            Assistent starten
+            Starten
         </a>
     </div>
-
 </body>
 </html>
