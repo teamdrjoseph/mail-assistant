@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Barlow:wght@300;400&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --cream: #F5/F0E8;
+            --cream: #F5F0E8;
             --warm-white: #FAF8F4;
             --gold: #B8976A;
             --charcoal: #2C2C2C;
@@ -34,6 +34,13 @@
             max-width: 500px;
             width: 90%;
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-radius: 2px;
+        }
+
+        .logo {
+            width: 220px;
+            height: auto;
+            margin-bottom: 30px;
         }
 
         .brand-title {
@@ -42,6 +49,7 @@
             letter-spacing: 0.2em;
             text-transform: uppercase;
             margin-bottom: 10px;
+            font-weight: 500;
         }
 
         .brand-subtitle {
@@ -54,11 +62,11 @@
         }
 
         .description {
-            font-size: 16px;
-            line-height: 1.6;
+            font-size: 15px;
+            line-height: 1.7;
             margin-bottom: 40px;
             font-weight: 300;
-            color: #6B6B6B;
+            color: #555;
         }
 
         .btn-launch {
@@ -67,10 +75,10 @@
             color: white;
             text-decoration: none;
             font-family: 'Barlow Condensed', sans-serif;
-            font-size: 14px;
-            letter-spacing: 0.2em;
+            font-size: 13px;
+            letter-spacing: 0.22em;
             text-transform: uppercase;
-            padding: 20px 40px;
+            padding: 18px 45px;
             transition: all 0.3s ease;
             border: 1px solid var(--charcoal);
         }
@@ -78,34 +86,38 @@
         .btn-launch:hover {
             background: transparent;
             color: var(--charcoal);
-            transform: translateY(-3px);
+            transform: translateY(-2px);
         }
 
         .footer-note {
-            margin-top: 40px;
+            margin-top: 45px;
             font-size: 10px;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.15em;
             text-transform: uppercase;
             color: #A0A0A0;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="brand-title">TEAM DR JOSEPH</div>
-        <div class="brand-subtitle">E-Mail Assistent</div>
+        <img src="https://www.teamdrjoseph.com/media/logo/default/logo_tdj.svg" alt="TEAM DR JOSEPH" class="logo">
+        
+        <div class="brand-title">E-Mail Assistent</div>
+        <div class="brand-subtitle">Smart Communication Tool</div>
         
         <p class="description">
-            Willkommen im internen Portal für KI-gestützte Kundenkommunikation. 
-            Klicken Sie auf den Button, um die neueste Version des Assistenten zu starten.
+            Willkommen im internen Portal für die optimierte Kundenkommunikation. 
+            Klicken Sie auf den Button, um die aktuelle Version der KI-Unterstützung zu öffnen.
         </p>
 
-        <a href="https://claude.ai/artifacts/a1340544-3bb5-4d8d-89c1-6ae4b0a1d0d4" class="btn-launch" target="_blank">
+        <a href="https://claude.ai/share/de6f9a0c-265a-4382-9602-df66316ef356" class="btn-launch">
             Assistent starten
         </a>
 
-        <div class="footer-note">Internal Use Only · Hightech Natural Cosmetics</div>
+        <div class="footer-note">Internal Use Only · Hightech Natural Cosmetics®</div>
     </div>
 
 </body>
