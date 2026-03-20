@@ -1,12 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=DEIN_CLAUDE_LINK">
-    <title>Weiterleitung...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEAM DR JOSEPH · E-Mail Assistent Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Barlow:wght@300;400&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream: #F5/F0E8;
+            --warm-white: #FAF8F4;
+            --gold: #B8976A;
+            --charcoal: #2C2C2C;
+            --border: #E0D8CE;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Barlow', sans-serif;
+            background-color: var(--cream);
+            color: var(--charcoal);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background: var(--warm-white);
+            padding: 60px 40px;
+            border: 1px solid var(--border);
+            max-width: 500px;
+            width: 90%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .brand-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 24px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .brand-subtitle {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 14px;
+            letter-spacing: 0.3em;
+            color: var(--gold);
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+
+        .description {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            font-weight: 300;
+            color: #6B6B6B;
+        }
+
+        .btn-launch {
+            display: inline-block;
+            background: var(--charcoal);
+            color: white;
+            text-decoration: none;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 14px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            padding: 20px 40px;
+            transition: all 0.3s ease;
+            border: 1px solid var(--charcoal);
+        }
+
+        .btn-launch:hover {
+            background: transparent;
+            color: var(--charcoal);
+            transform: translateY(-3px);
+        }
+
+        .footer-note {
+            margin-top: 40px;
+            font-size: 10px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #A0A0A0;
+        }
+    </style>
 </head>
 <body>
-    Falls Sie nicht automatisch weitergeleitet werden, 
-    <a href="https://claude.ai/artifacts/a1340544-3bb5-4d8d-89c1-6ae4b0a1d0d4">klicken Sie bitte hier</a>.
+
+    <div class="container">
+        <div class="brand-title">TEAM DR JOSEPH</div>
+        <div class="brand-subtitle">E-Mail Assistent</div>
+        
+        <p class="description">
+            Willkommen im internen Portal für KI-gestützte Kundenkommunikation. 
+            Klicken Sie auf den Button, um die neueste Version des Assistenten zu starten.
+        </p>
+
+        <a href="DEIN_AKTUELLER_CLAUDE_LINK" class="btn-launch" target="_blank">
+            Assistent starten
+        </a>
+
+        <div class="footer-note">Internal Use Only · Hightech Natural Cosmetics</div>
+    </div>
+
 </body>
 </html>
