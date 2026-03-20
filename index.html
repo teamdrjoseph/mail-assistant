@@ -6,115 +6,27 @@
     <title>TEAM DR JOSEPH · Portal</title>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Barlow:wght@300;400&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        :root { 
-            --cream: #F5F0E8; 
-            --warm-white: #FAF8F4; 
-            --gold: #B8976A; 
-            --charcoal: #2C2C2C; 
-            --border: #E0D8CE; 
-        }
-        
-        body { 
-            margin: 0; 
-            padding: 0; 
-            font-family: 'Barlow', sans-serif; 
-            background-color: var(--cream); 
-            color: var(--charcoal); 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            min-height: 100vh; 
-        }
-
-        .container { 
-            background: var(--warm-white); 
-            padding: 80px 50px; 
-            border: 1px solid var(--border); 
-            max-width: 600px; 
-            width: 90%; 
-            box-shadow: 0 15px 40px rgba(0,0,0,0.04); 
-            text-align: center;
-        }
-
-        .logo-section {
-            margin-bottom: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* Das Logo als unzerstörbares Bild-Element */
-        .logo-image {
-            width: 100%;
-            max-width: 420px;
-            height: auto;
-            display: block;
-        }
-
-        .line-separator {
-            width: 100%;
-            height: 1px;
-            background-color: var(--charcoal);
-            margin-top: 15px;
-            margin-bottom: 50px;
-        }
-
-        .title-main { 
-            font-family: 'Cormorant Garamond', serif; 
-            font-size: 26px; 
-            letter-spacing: 0.35em; 
-            text-transform: uppercase; 
-            margin-bottom: 12px; 
-            font-weight: 400; 
-        }
-
-        .title-sub { 
-            font-family: 'Barlow Condensed', sans-serif; 
-            font-size: 14px; 
-            letter-spacing: 0.45em; 
-            color: var(--gold); 
-            text-transform: uppercase; 
-            margin-bottom: 55px; 
-        }
-
-        .button-link { 
-            display: inline-block; 
-            background: var(--charcoal); 
-            color: white !important; 
-            text-decoration: none; 
-            font-family: 'Barlow Condensed', sans-serif; 
-            font-size: 14px; 
-            letter-spacing: 0.3em; 
-            text-transform: uppercase; 
-            padding: 22px 65px; 
-            transition: all 0.3s ease; 
-            border: 1px solid var(--charcoal); 
-        }
-
-        .button-link:hover { 
-            background: transparent; 
-            color: var(--charcoal) !important; 
-        }
+        :root { --cream: #F5F0E8; --warm-white: #FAF8F4; --gold: #B8976A; --charcoal: #2C2C2C; --border: #E0D8CE; }
+        body { margin: 0; padding: 0; font-family: 'Barlow', sans-serif; background-color: var(--cream); color: var(--charcoal); display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .container { background: var(--warm-white); padding: 80px 50px; border: 1px solid var(--border); max-width: 600px; width: 90%; box-shadow: 0 15px 40px rgba(0,0,0,0.04); text-align: center; }
+        .logo-section { margin-bottom: 20px; display: flex; flex-direction: column; align-items: center; }
+        .logo-image { width: 100%; max-width: 420px; height: auto; display: block; }
+        .line-separator { width: 100%; height: 1px; background-color: var(--charcoal); margin-top: 15px; margin-bottom: 50px; }
+        .title-main { font-family: 'Cormorant Garamond', serif; font-size: 26px; letter-spacing: 0.35em; text-transform: uppercase; margin-bottom: 12px; }
+        .title-sub { font-family: 'Barlow Condensed', sans-serif; font-size: 14px; letter-spacing: 0.45em; color: var(--gold); text-transform: uppercase; margin-bottom: 55px; }
+        .button-link { display: inline-block; background: var(--charcoal); color: white !important; text-decoration: none; font-family: 'Barlow Condensed', sans-serif; font-size: 14px; letter-spacing: 0.3em; text-transform: uppercase; padding: 22px 65px; border: 1px solid var(--charcoal); transition: all 0.3s; }
+        .button-link:hover { background: transparent; color: var(--charcoal) !important; }
     </style>
 </head>
 <body>
-
     <div class="container">
         <div class="logo-section">
-            <img src="https://www.teamdrjoseph.com/media/logo/default/logo_tdj.svg" 
-                 alt="TEAM DR JOSEPH" 
-                 class="logo-image"
-                 onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NTcgMzIiPjxwYXRoIGQ9Ik0xNi40IDIuMWgtNy4zdjI3LjdINC4zVjIuMUgwVjBoMTYuNHYyLjF6TTM0LjQgMTIuM2gtOC4ydjYuMWg3LjR2Mi4xaC03LjR2Ny4zaDguNnYyLjFIMjEuOVYwaDEyLjV2Mi4xaC04LjJ2OC4xaDguMnYyLjF6TTUzLjEgMjMuM2gtOC41bC0xLjYgNi41aC00LjZMNDYuNiAwaDQuNWw4LjEgMjkuOGgtNC42bC0xLjUtNi41em0tMS00LjFsLTMuMy0xMy42LTMuMyAxMy42aDYuNnpNODguMSAwdjI5LjhoLTQuMWwtMTAuNC0xOC4xdjE4LjFoLTQuMVYwaDQuMWwxMC40IDE4LjJWMGg0LjF6TTExMy44IDB2MjkuOGgtNC4zVjIuMWgtNC44VjBoMTMuOXYyLjFoLTQuOHpNMTQyLjEgNi44aDIuM2MzLjQgMCA1LjIgMS42IDUuMiA0LjQgMCAyLjgtMS44IDQuNC01LjIgNC40aC0yLjNWNi44em0tNC4zLTIuMXYyNS4xaDQuM3YtMTJoMi41bDUuNSAxMmguN2wtNi0xM2MyLjctLjkgNC4zLTMuMSA0LjMtNi4xIDAtNC42LTMuMi02LjktOC40LTYuOWgtNi45djF6TTE3MC4xIDB2MjkuOGgtNC4x bC0xMC40LTE4LjF2MTguMWgtNC4xVjBoNC4xbDEwLjQgMTguMlYwaDQuMXpNMjAzLjIgMGM3LjggMCAxMi44IDUuNyAxMi44IDE0LjkgMCA5LjItNSAxNC45LTEyLjggMTQuOXMtMTIuOC01LjctMTIuOC0xNC45QzE5MC40IDUuNyAxOTUuNCAwIDIwMy4yIDB6bTAgMjcuN2M2LjEgMCA4LjUtNC44IDguNS0xMi44cy0yLjQtMTIuOC04LjUtMTIuOC04LjUgNC44LTguNSAxMi44IDIuNCAxMi44IDguNSAxMi44ek0yMzguMSAxMS44YzAtMy0uMS01LS4xLTcuMSAwLTEuOC4xLTMuMS4xLTQuN2gtNC4zYzAgMS42LjEgMi45LjEgNC43IDAgMi4xLS4xIDQuMS0uMSA3LjEgMCAzIC4xIDUgLjEgNy4xIDAgMS44LS4xIDMuMS0uMSA0LjdoNC4zYzAtMS42LS4xLTIuOS0uMS00LjcgMC0yLjEtLjEtNC4xLS4xLTcuMXpNMjYyLjEgMTQuOWMwIDkuMi01IDE0LjktMTIuOCAxNC45cy0xMi44LTUuNy0xMi44LTE0LjljMC05LjIgNS0xNC45IDEyLjgtMTQuOXMxMi44IDUuNyAxMi44IDE0Ljl6bS00LjMgMGMwLTgtMi40LTEyLjgtOC41LTEyLjhzLTguNSA0LjgtOC41IDEyLjggMi40IDEyLjggOC41IDEyLjggOC41LTQuOCA4LjUtMTIuOHpNMjg2LjEgMi4xaC03LjN2MjcuN2gtNC4zVjIuMWgtNC40VjBoMTZ2Mi4xek0zMDQuMSAxMi4zaC04LjJ2Ni4xaDcuNHYyLjFoLTcuNHY3LjNoOC42djIuMWgtMTIuOVYwaDEyLjV2Mi4xaC04LjJ2OC4xaDguMnYyLjF6TTMyNC40IDIwLjFjMS40LjkgMy4yIDEuNCA1LjIgMS40IDMgMCA0LjUtMS4xIDQuNS0yLjggMC0xLjYtMS4xLTIuNC00LTMuMS00LjItMS02LjgtMi40LTYuOC02IDAtMy44IDMuMS02IDguMS02IDIuMyAwIDQuMi40IDUuNyAxLjFsLS44IDMuNWMtMS4zLS43LTIuOS0xLjEtNC43LTEuMS0zIDAtNC4xIDEuMi00LjEgMi41IDAgMS41LjkgMi4yIDQgMi45IDQuMyAxIDYuOCAyLjUgNi44IDYuMSAwIDQtMy4zIDYuNC04LjcgNi40LTIuNSAwLTQuOS0uNi02LjYtMS41bDEuNC0zLjR6TTM2MS4xIDEyLjNoLTguMnY2LjFoNy40djIuMWgtNy40djcuM2g4LjZ2Mi4xaC0xMi45VjBoMTIuNXYyLjFoLTguMnY4LjFoOC4ydjIuMXpNMzgwLjEgMi4xaC03LjN2MjcuN2gtNC4zVjIuMWgtNC40VjBoMTZ2Mi4xek0zOTIuMSAwdjI5LjhoLTQuM1YyLjFoLTQuOFYwaDEzLjl2Mi4xaC00Ljh6TTQyNS40IDYuOGgyLjNjMy40IDAgNS4yIDEuNiA1LjIgNC40IDAgMi44LTEuOCA0LjQtNS4yIDQuNGgtMi4zVjYuOHptLTQuMy0yLjF2MjUuMWg0LjN2LTEyaDIuNWw1LjUgMTJoNC43bC02LTEzYzIuNy0uOSA0LjMtMy4xIDQuMy02LjEgMC00LjYtMy4yLTYuOS04LjQtNi45aC02LTYuOXYxek00NTMuNCAyLjFoLTcuM3YyNy43aC00LjNWMi4xaC00LjRWMGgxNnYyLjF6IiBmaWxsPSIjMkMyQzJDIi8+PC9zdmc+'">
+            <img src="https://www.teamdrjoseph.com/media/logo/default/logo_tdj.svg" alt="TEAM DR JOSEPH" class="logo-image">
             <div class="line-separator"></div>
         </div>
-        
         <div class="title-main">E-Mail Assistent</div>
         <div class="title-sub">Smart Communication Tool</div>
-        
-        <a href="https://claude.ai/artifacts/a1340544-3bb5-4d8d-89c1-6ae4b0a1d0d4" class="button-link">
-            Assistent starten
-        </a>
+        <a href="https://claude.ai/artifacts/a1340544-3bb5-4d8d-89c1-6ae4b0a1d0d4" class="button-link">Assistent starten</a>
     </div>
-
 </body>
 </html>
