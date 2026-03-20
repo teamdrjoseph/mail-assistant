@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEAM DR JOSEPH · Portal</title>
+    <title>TEAM DR JOSEPH · E-Mail Assistent</title>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Barlow:wght@300;400&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
     <style>
         :root { 
@@ -23,71 +23,71 @@
             display: flex; 
             justify-content: center; 
             align-items: center; 
-            height: 100vh; 
+            min-height: 100vh; 
             text-align: center; 
         }
 
         .container { 
             background: var(--warm-white); 
-            padding: 60px 40px; 
+            padding: 80px 50px; 
             border: 1px solid var(--border); 
-            max-width: 600px; 
+            max-width: 650px; 
             width: 90%; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+            box-shadow: 0 15px 40px rgba(0,0,0,0.04); 
         }
 
-        /* Das exakte Logo-Design */
-        .logo-box {
-            margin-bottom: 40px;
+        /* Präziser Logo-Nachbau TEAM DR JOSEPH */
+        .logo-area {
+            margin-bottom: 50px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        .logo-main {
+        .logo-text {
             font-family: 'Barlow Condensed', sans-serif;
-            font-size: 42px;
-            letter-spacing: 0.35em;
+            font-size: 48px;
+            letter-spacing: 0.4em;
             font-weight: 500;
             text-transform: uppercase;
-            line-height: 1;
-            margin-bottom: 12px;
             display: flex;
             align-items: baseline;
+            justify-content: center;
+            margin-bottom: 5px;
+            padding-left: 0.4em; /* Optischer Ausgleich für Letter-Spacing rechts */
         }
 
-        .logo-main span {
-            font-size: 24px;
-            letter-spacing: 0.1em;
+        .logo-text span {
+            font-size: 26px;
             margin: 0 4px;
             position: relative;
-            top: -12px;
+            top: -14px; /* Hochgestelltes R */
             font-weight: 600;
         }
 
-        .logo-line {
+        .logo-underline {
             width: 100%;
             height: 1px;
             background-color: var(--charcoal);
-            margin-bottom: 35px;
         }
 
-        .brand-title { 
+        .brand-header { 
             font-family: 'Cormorant Garamond', serif; 
-            font-size: 24px; 
-            letter-spacing: 0.25em; 
+            font-size: 26px; 
+            letter-spacing: 0.3em; 
             text-transform: uppercase; 
-            margin-bottom: 10px; 
+            margin-top: 40px;
+            margin-bottom: 12px; 
             font-weight: 400; 
         }
 
-        .brand-subtitle { 
+        .brand-sub { 
             font-family: 'Barlow Condensed', sans-serif; 
-            font-size: 13px; 
-            letter-spacing: 0.35em; 
+            font-size: 14px; 
+            letter-spacing: 0.4em; 
             color: var(--gold); 
             text-transform: uppercase; 
-            margin-bottom: 45px; 
+            margin-bottom: 50px; 
         }
 
         .btn-launch { 
@@ -96,10 +96,10 @@
             color: white; 
             text-decoration: none; 
             font-family: 'Barlow Condensed', sans-serif; 
-            font-size: 14px; 
+            font-size: 15px; 
             letter-spacing: 0.25em; 
             text-transform: uppercase; 
-            padding: 20px 55px; 
+            padding: 22px 60px; 
             transition: all 0.3s ease; 
             border: 1px solid var(--charcoal); 
             cursor: pointer; 
@@ -108,19 +108,20 @@
         .btn-launch:hover { 
             background: transparent; 
             color: var(--charcoal); 
+            transform: translateY(-2px);
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="logo-box">
-            <div class="logo-main">TEAM D<span>R</span> JOSEPH</div>
-            <div class="logo-line"></div>
+        <div class="logo-area">
+            <div class="logo-text">TEAM D<span>R</span> JOSEPH</div>
+            <div class="logo-underline"></div>
         </div>
         
-        <div class="brand-title">E-Mail Assistent</div>
-        <div class="brand-subtitle">Smart Communication Tool</div>
+        <div class="brand-header">E-Mail Assistent</div>
+        <div class="brand-sub">Smart Communication Tool</div>
         
         <a href="https://claude.ai/artifacts/a1340544-3bb5-4d8d-89c1-6ae4b0a1d0d4" class="btn-launch">
             Assistent starten
