@@ -31,44 +31,31 @@
             background: var(--warm-white); 
             padding: 80px 50px; 
             border: 1px solid var(--border); 
-            max-width: 650px; 
+            max-width: 600px; 
             width: 90%; 
             box-shadow: 0 15px 40px rgba(0,0,0,0.04); 
         }
 
-        /* Präziser Logo-Nachbau TEAM DR JOSEPH */
-        .logo-area {
-            margin-bottom: 50px;
+        /* Logo Bereich mit Original-SVG */
+        .logo-wrapper {
+            margin-bottom: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        .logo-text {
-            font-family: 'Barlow Condensed', sans-serif;
-            font-size: 48px;
-            letter-spacing: 0.4em;
-            font-weight: 500;
-            text-transform: uppercase;
-            display: flex;
-            align-items: baseline;
-            justify-content: center;
-            margin-bottom: 5px;
-            padding-left: 0.4em; /* Optischer Ausgleich für Letter-Spacing rechts */
+        .logo-img {
+            width: 450px; /* Breite angepasst für dominante Optik */
+            height: auto;
+            display: block;
         }
 
-        .logo-text span {
-            font-size: 26px;
-            margin: 0 4px;
-            position: relative;
-            top: -14px; /* Hochgestelltes R */
-            font-weight: 600;
-        }
-
-        .logo-underline {
+        .logo-line {
             width: 100%;
             height: 1px;
             background-color: var(--charcoal);
+            margin-top: 15px;
+            margin-bottom: 50px;
         }
 
         .brand-header { 
@@ -76,7 +63,6 @@
             font-size: 26px; 
             letter-spacing: 0.3em; 
             text-transform: uppercase; 
-            margin-top: 40px;
             margin-bottom: 12px; 
             font-weight: 400; 
         }
@@ -87,7 +73,7 @@
             letter-spacing: 0.4em; 
             color: var(--gold); 
             text-transform: uppercase; 
-            margin-bottom: 50px; 
+            margin-bottom: 55px; 
         }
 
         .btn-launch { 
@@ -115,9 +101,9 @@
 <body>
 
     <div class="container">
-        <div class="logo-area">
-            <div class="logo-text">TEAM D<span>R</span> JOSEPH</div>
-            <div class="logo-underline"></div>
+        <div class="logo-wrapper">
+            <img src="https://www.teamdrjoseph.com/media/logo/default/logo_tdj.svg" alt="TEAM DR JOSEPH" class="logo-img">
+            <div class="logo-line"></div>
         </div>
         
         <div class="brand-header">E-Mail Assistent</div>
