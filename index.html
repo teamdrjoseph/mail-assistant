@@ -3,121 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEAM DR JOSEPH · E-Mail Assistent Portal</title>
+    <title>TEAM DR JOSEPH · Portal</title>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Barlow:wght@300;400&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --cream: #F5F0E8;
-            --warm-white: #FAF8F4;
-            --gold: #B8976A;
-            --charcoal: #2C2C2C;
-            --border: #E0D8CE;
+        :root { 
+            --cream: #F5F0E8; 
+            --warm-white: #FAF8F4; 
+            --gold: #B8976A; 
+            --charcoal: #2C2C2C; 
+            --border: #E0D8CE; 
+        }
+        
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Barlow', sans-serif; 
+            background-color: var(--cream); 
+            color: var(--charcoal); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            text-align: center; 
         }
 
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Barlow', sans-serif;
-            background-color: var(--cream);
-            color: var(--charcoal);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
+        .container { 
+            background: var(--warm-white); 
+            padding: 60px 40px; 
+            border: 1px solid var(--border); 
+            max-width: 500px; 
+            width: 90%; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
         }
 
-        .container {
-            background: var(--warm-white);
-            padding: 60px 40px;
-            border: 1px solid var(--border);
-            max-width: 500px;
-            width: 90%;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            border-radius: 2px;
-        }
-
-        .logo {
-            width: 220px;
-            height: auto;
+        /* Logo Styling */
+        .logo-container {
             margin-bottom: 30px;
         }
 
-        .brand-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 24px;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-            font-weight: 500;
-        }
-
-        .brand-subtitle {
+        .logo-text {
             font-family: 'Barlow Condensed', sans-serif;
-            font-size: 14px;
-            letter-spacing: 0.3em;
-            color: var(--gold);
+            font-size: 32px;
+            letter-spacing: 0.4em;
+            font-weight: 600;
             text-transform: uppercase;
-            margin-bottom: 40px;
-        }
-
-        .description {
-            font-size: 15px;
-            line-height: 1.7;
-            margin-bottom: 40px;
-            font-weight: 300;
-            color: #555;
-        }
-
-        .btn-launch {
+            border-bottom: 1px solid var(--charcoal);
             display: inline-block;
-            background: var(--charcoal);
-            color: white;
-            text-decoration: none;
-            font-family: 'Barlow Condensed', sans-serif;
-            font-size: 13px;
-            letter-spacing: 0.22em;
-            text-transform: uppercase;
-            padding: 18px 45px;
-            transition: all 0.3s ease;
-            border: 1px solid var(--charcoal);
-            cursor: pointer;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
         }
 
-        .btn-launch:hover {
-            background: transparent;
-            color: var(--charcoal);
-            transform: translateY(-2px);
+        .brand-title { 
+            font-family: 'Cormorant Garamond', serif; 
+            font-size: 22px; 
+            letter-spacing: 0.15em; 
+            text-transform: uppercase; 
+            margin-bottom: 8px; 
+            font-weight: 500; 
         }
 
-        .footer-note {
-            margin-top: 45px;
-            font-size: 10px;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: #A0A0A0;
-            border-top: 1px solid var(--border);
-            padding-top: 20px;
+        .brand-subtitle { 
+            font-family: 'Barlow Condensed', sans-serif; 
+            font-size: 13px; 
+            letter-spacing: 0.3em; 
+            color: var(--gold); 
+            text-transform: uppercase; 
+            margin-bottom: 40px; 
+        }
+
+        .btn-launch { 
+            display: inline-block; 
+            background: var(--charcoal); 
+            color: white; 
+            text-decoration: none; 
+            font-family: 'Barlow Condensed', sans-serif; 
+            font-size: 13px; 
+            letter-spacing: 0.22em; 
+            text-transform: uppercase; 
+            padding: 18px 45px; 
+            transition: all 0.3s ease; 
+            border: 1px solid var(--charcoal); 
+            cursor: pointer; 
+        }
+
+        .btn-launch:hover { 
+            background: transparent; 
+            color: var(--charcoal); 
+            transform: translateY(-2px); 
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="https://www.teamdrjoseph.com/media/logo/default/logo_tdj.svg" alt="TEAM DR JOSEPH" class="logo">
+        <div class="logo-container">
+            <div class="logo-text">TEAM D<sup>R</sup> JOSEPH</div>
+        </div>
         
         <div class="brand-title">E-Mail Assistent</div>
         <div class="brand-subtitle">Smart Communication Tool</div>
         
-        <p class="description">
-            Willkommen im internen Portal. Klicken Sie auf den Button, um den KI-Assistenten im aktuellen Fenster zu öffnen.
-        </p>
-
-        <a href="https://claude.ai/share/a1340544-3bb5-4d8d-89c1-6ae4b0a1d0d4" class="btn-launch">
+        <a href="https://claude.ai/artifacts/a1340544-3bb5-4d8d-89c1-6ae4b0a1d0d4" class="btn-launch">
             Assistent starten
         </a>
-
-        <div class="footer-note">Internal Use Only · Hightech Natural Cosmetics®</div>
     </div>
 
 </body>
