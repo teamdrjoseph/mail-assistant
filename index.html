@@ -3,21 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEAM DR JOSEPH · mail assistant</title>
+    <title>TEAM DR JOSEPH · Mail Assistant</title>
     <style>
-        :root {
-            --bg-main: #DED8D1; 
-            --bg-container: #E9E6E2; 
-            --black: #000000;
-            --white: #FFFFFF;
+        /*
+         * MONUMENT GROTESK – Font-Dateien selbst hosten
+         *   MonumentGrotesk-Regular.woff2 / .woff
+         *   MonumentGrotesk-Bold.woff2 / .woff
+         */
+        @font-face {
+            font-family: 'Monument Grotesk';
+            src: url('MonumentGrotesk-Regular.woff2') format('woff2'),
+                 url('MonumentGrotesk-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Monument Grotesk';
+            src: url('MonumentGrotesk-Bold.woff2') format('woff2'),
+                 url('MonumentGrotesk-Bold.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+        /*
+         * AKKURAT PRO – Font-Dateien selbst hosten
+         *   AkkuratPro-Regular.woff2 / .woff
+         *   AkkuratPro-Bold.woff2 / .woff
+         *   AkkuratPro-Light.woff2 / .woff
+         */
+        @font-face {
+            font-family: 'Akkurat Pro';
+            src: url('AkkuratPro-Regular.woff2') format('woff2'),
+                 url('AkkuratPro-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Akkurat Pro';
+            src: url('AkkuratPro-Bold.woff2') format('woff2'),
+                 url('AkkuratPro-Bold.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Akkurat Pro';
+            src: url('AkkuratPro-Light.woff2') format('woff2'),
+                 url('AkkuratPro-Light.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-main: #DED8D1;
+            --bg-container: #E9E6E2;
+            --charcoal: #2C2C2C;
+            --white: #ffffff;
+            --border: #DED8D1;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'Akkurat Pro', sans-serif;
             background-color: var(--bg-main);
-            color: var(--black);
+            color: var(--charcoal);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -27,66 +80,61 @@
         .container {
             background-color: var(--bg-container);
             padding: 80px 50px;
-            border: 1px solid rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
             max-width: 600px;
             width: 90%;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.04);
             text-align: center;
         }
 
         .title-main {
             font-family: 'Akkurat Pro', sans-serif;
-            font-weight: 900;
+            font-weight: 700;
             font-size: 30px;
-            letter-spacing: 0.0em;
+            letter-spacing: 0;
             text-transform: uppercase;
-            color: #2C2C2C;
+            color: var(--charcoal);
             margin-bottom: 12px;
             -webkit-font-smoothing: antialiased;
         }
 
         .title-sub {
-            font-family: 'MonumentGrotesk', sans-serif;
-            font-weight: 300;
+            font-family: 'Monument Grotesk', 'Akkurat Pro', sans-serif;
+            font-weight: 400;
             font-size: 12px;
             letter-spacing: 0.1em;
-             text-transform: uppercase;
-            color: #2C2C2C;
-            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: var(--charcoal);
+            margin-bottom: 40px;
         }
 
         .button-link {
             display: inline-block;
-            font-family: 'MonumentGrotesk', sans-serif;
-            background: var(--black);
+            font-family: 'Monument Grotesk', 'Akkurat Pro', sans-serif;
+            background: var(--charcoal);
             color: var(--white);
             text-decoration: none;
             border: none;
             cursor: pointer;
             font-size: 11px;
-            letter-spacing: 0.15em;
+            letter-spacing: 0.1em;
             text-transform: uppercase;
             font-weight: 700;
-            padding: 16px 50px;
-            transition: all 0.2s;
-            border-radius: 0px;
+            padding: 14px 48px;
+            transition: background 0.2s, transform 0.1s;
+            border-radius: 1px;
         }
 
-        .button-link:hover {
-            background: #222222;
-            opacity: 0.9;
-        }
+        .button-link:hover { background: #1a1a1a; }
+        .button-link:active { transform: scale(0.99); }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <div class="title-main">E-Mail  Assistant</div>
+        <div class="title-main">E-Mail Assistant</div>
         <div class="title-sub">Smart Communication Tool</div>
         <a class="button-link" href="https://claude.ai/artifacts/104bc801-995e-4680-8511-bdf2fcf61b85">
             Starten
         </a>
     </div>
-
 </body>
 </html>
