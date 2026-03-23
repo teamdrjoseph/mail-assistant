@@ -1,80 +1,75 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEAM DR JOSEPH · mail assistant</title>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@300;400&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --cream: ##E0D8CE;
-            --warm-white: #FAF8F4;
-            --black: #000000;
-            --border: #E0D8CE;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Barlow', sans-serif;
-            background-color: var(--cream);
-            color: var(--black);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .container {
-            background: var(--warm-white);
-            padding: 80px 50px;
-            border: 1px solid var(--border);
-            max-width: 600px;
-            width: 90%;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.04);
-            text-align: center;
-        }
-        .title-main {
-            font-family: 'MonumentGrotesk', sans-serif;
-            font-weight: 700;
-            font-size: 28px;
-            letter-spacing: 0.00em;
-            text-transform: uppercase;
-            color: #2C2C2C;
-            margin-bottom: 10px;
-        }
-        .title-sub {
-            font-family: 'MonumentGrotesk', sans-serif;
-            font-weight: 300;
-            font-size: 13px;
-            letter-spacing: 0.0em;
-            color: #2C2C2C;
-            margin-bottom: 50px;
-        }
-        .button-link {
-            display: inline-block;
-            font-family: 'MonumentGrotesk', sans-serif;
-            background: var(--black);
-            color: var(--cream);
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
-            font-size: 11px;
-            letter-spacing: 0.0em;
-            text-transform: uppercase;
-            font-weight: 700;
-            padding: 14px 48px;
-            transition: background 0.2s, transform 0.1s;
-            border-radius: 1px;
-        }
-        .button-link:hover { background: #1a1a1a; }
-        .button-link:active { transform: scale(0.99); }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="title-main">E-Mail Assistant</div>
-        <div class="title-sub">Smart Communication Tool</div>
-        <a class="button-link" href="https://claude.ai/artifacts/b68bf169-e43f-4a41-9de5-b499e364b2db">
-            Starten
-        </a>
-    </div>
-</body>
-</html>
+<style>
+    :root {
+        /* Hintergrund der gesamten Seite (Blaues X im Bild) */
+        --bg-main: #E2DDD4; 
+        
+        /* Hintergrund der Box / Container (Oranges X im Bild) */
+        --bg-container: #E9E5DE; 
+        
+        --black: #000000;
+        --white: #FFFFFF;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+        font-family: 'Barlow', sans-serif;
+        /* Hier wird das dunklere Beige genutzt */
+        background-color: var(--bg-main); 
+        color: var(--black);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .container {
+        /* Hier wird das hellere Beige genutzt */
+        background: var(--bg-container); 
+        padding: 80px 50px;
+        /* Border ist jetzt fast unsichtbar, da gleiche Farbe wie Hintergrund */
+        border: 1px solid var(--bg-container); 
+        max-width: 600px;
+        width: 90%;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.04);
+        text-align: center;
+    }
+
+    .title-main {
+        font-family: 'Barlow Condensed', sans-serif; /* Fallback, da MonumentGrotesk lokal sein müsste */
+        font-weight: 700;
+        font-size: 28px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--black);
+        margin-bottom: 10px;
+    }
+
+    .title-sub {
+        font-family: 'Barlow', sans-serif;
+        font-weight: 300;
+        font-size: 13px;
+        color: var(--black);
+        margin-bottom: 50px;
+    }
+
+    .button-link {
+        display: inline-block;
+        background: var(--black);
+        /* Schriftfarbe auf Weiß gesetzt */
+        color: var(--white); 
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        font-size: 11px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 14px 48px;
+        transition: background 0.2s, transform 0.1s;
+        border-radius: 1px;
+    }
+
+    .button-link:hover { background: #333333; }
+    .button-link:active { transform: scale(0.99); }
+</style>
